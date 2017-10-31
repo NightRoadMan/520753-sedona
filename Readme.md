@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артем Ли](https://up.htmlacademy.ru/htmlcss/19/user/520753).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Коробейников](https://htmlacademy.ru/profile/rkorobeynikov).
 
 ---
 
