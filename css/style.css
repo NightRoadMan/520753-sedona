@@ -2,6 +2,7 @@ body {
 padding: 0;
 margin: 0;
 font-family: "PT-Sans", "Arial", Sans-serif;
+background: #f2f2f2;
 
 }
 
@@ -11,4 +12,45 @@ font-family: "PT-Sans", "Arial", Sans-serif;
 	width: 100%;
 	clear: both;
 }
+
+
+.forthegreybackground {
+	background: grey;
+	display: block;
+	width:300px;
+	height:75px;
+}
+
+.container {
+width: 	1200px;
+margin: 0px auto;
+background: white;
+
+}
+
+.logohtml {
+	border:0;
+}
+
+.social {	
+	background: #81b3d2;
+	display: block;
+	text-align:center;
+	width: 40px;
+	height: 40px;
+	margin: 5px 5px  5px 5px;
+	line-height: 43px;
+	float: left;
+
+}
+
+.bot-section-hashtag {
+	float: left;
+	display: block;
+	width: 120px;
+
+}
+
+
+
 
