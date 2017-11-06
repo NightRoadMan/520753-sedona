@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Our Hotels</title>
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+   	 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+	
+	<header class="top-section_hotel container">
+	<nav class="menu-main">
+		<ul>
+			<li><a href="#">Информация</a></li>
+			<li><a href="#">Фото и видео</a></li>
+								</ul>
+
+		<img src="img/logo.png" width="140" height="70" alt="Логотип">
+
+		<ul>
+			<li><a href="#">Карта штата</a></li>
+			<li><a href="#">Гостиницы </a></li>
+												</ul>
+													</nav>
+		
+														</header>
+
+	<section class="container bluredbackground">
+		<div class="infrastructure">
+			<label>
+			<p>Инфраструктура:</p>
+			<ul>
+				<li>
+					<input type="checkbox" name="pool">Бассейн
+				</li>
+
+				<li>
+					<input type="checkbox" name="parking">Парковка
+				</li>
+
+				<li>
+					<input type="checkbox" name="wifi">Wi-Fi
+				</li>
+										
+													</ul>		
+													</label>	
+														</div>
+
+		<div class="typehouse">
+			<label>
+			<p>Тип жилья:</p>
+			<ul>
+				<li>
+					<input type="checkbox" name="hotel">Гостиница
+				</li>
+
+				<li>
+					<input type="checkbox" name="motel">Мотель
+				</li>
+
+				<li>
+					<input type="checkbox" name="apartament">Апартаменты
+				</li>
+										
+													</ul>	
+													</label>		
+														</div>
+
+				
+				<div class="cost-hotel"> 
+				<label>
+				<p>Стоимость в сутки (Р):</p>
+				<table class="table-cost">
+					<tr>
+						<td>
+						<p>от 0</p>	
+						</td>
+
+						<td>
+						<p>до 3000</p>	
+						</td>
+
+					</tr>
+				</table>
+				
+				<input type="range">
+				<br>
+				<input type="submit" name="submit" value="Показать">
+				</label>
+
+
+							</div>
+
+												</section>
+
+
+		<article class="container find-hotel"> <!--Неуверен что через артикл, но секции нужны, к тому же вполне независивый элемент, если что невидимый заголовок можно вставить (надо еще посмотреть как :)) -->	
+					
+					<p>Найдено: 3</p>
+				
+				<div>
+					
+					<p>Сортировка</p>
+					
+					<nav>
+					<ul>
+						<li><input type="submit" value="По цене" name="formoneycost"></li>
+
+						<li><input type="submit" value="По типу" name="fortypes"></li>
+
+						<li><input type="submit" value="По рейтингу" name="forstars"></li>
+					</ul>
+						
+					</nav>
+								
+								</div>
+
+					<section class="hotels">
+						<img src="img/amara.jpg" alt="Amara" width="135" height="90">
+							<h2>Amara Resort & Spa</h2>
+								<p>Гостиница</p>
+									<p>от 4000р.</p>
+										<input type="button" name="givemore" value="Подробней">
+
+										<input type="submit" name="bookit" value="Забронировать">
+						
+															</section>
+
+						<section class="hotels">
+						<img src="img/desert.jpg" alt="Amara" width="135" height="90">
+							<h2>Desert Quail Inn</h2>
+								<p>Мотель</p>
+									<p>от 3000р.</p>
+										<input type="button" name="givemore" value="Подробней">
+
+										<input type="submit" name="bookit" value="Забронировать">
+						
+															</section>
+
+
+						<section class="hotels">
+						<img src="img/desert.jpg" alt="Amara" width="135" height="90">
+							<h2>Villas at Poco Diablo</h2>
+								<p>Апартаменты</p>
+									<p>от 2000р.</p>
+										<input type="button" name="givemore" value="Подробней">
+
+										<input type="submit" name="bookit" value="Забронировать">
+						
+															</section>
+
+
+
+							
+												</article>
+
+	
+</body>
+</html>

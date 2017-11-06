@@ -1,7 +1,7 @@
 body {
 padding: 0;
 margin: 0;
-font-family: "PT-Sans", "Arial", Sans-serif;
+font-family: 'PT Sans', Arial, sans-serif;
 background: #f2f2f2;
 
 }
@@ -51,6 +51,19 @@ background: white;
 
 }
 
+/*CSS для Hotels*/
 
+.table-cost {
+	border: 3px solid grey;
+	border-collapse: collapse;
+}
 
+.hotels {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 10px;
+	border-collapse: collapse; /* как тут сделать 
+	одну полосу?*/
+	margin-top: -1px;
+}
 
