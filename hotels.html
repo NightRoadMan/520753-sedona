@@ -9,163 +9,166 @@
 <body>
 	
 	<header class="top-section_hotel container">
-	<nav class="menu-main">
-		<ul>
-			<li><a href="#">Информация</a></li>
-			<li><a href="#">Фото и видео</a></li>
-								</ul>
+
+		<nav class="menu-main">
+			<ul>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+			</ul>
 
 		<img src="img/logo.png" width="140" height="70" alt="Логотип">
 
-		<ul>
-			<li><a href="#">Карта штата</a></li>
-			<li><a href="#">Гостиницы </a></li>
-												</ul>
-													</nav>
+			<ul>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы </a></li>
+			</ul>		
+		</nav>
 		
-														</header>
+	</header>
 
 	<section class="container bluredbackground">
 		<div class="infrastructure">
 			<label>
-			<p>Инфраструктура:</p>
-			<ul>
-				<li>
-					<input type="checkbox" name="pool">Бассейн
-				</li>
 
-				<li>
-					<input type="checkbox" name="parking">Парковка
-				</li>
+				<p>Инфраструктура:</p>	
 
-				<li>
-					<input type="checkbox" name="wifi">Wi-Fi
-				</li>
-										
-													</ul>		
-													</label>	
-														</div>
+				<ul>
+					<li>
+						<input type="checkbox" name="pool">Бассейн
+					</li>
+
+					<li>
+						<input type="checkbox" name="parking">Парковка
+					</li>
+
+					<li>
+						<input type="checkbox" name="wifi">Wi-Fi
+					</li>										
+				</ul>	
+
+			</label>	
+		</div>
 
 		<div class="typehouse">
 			<label>
-			<p>Тип жилья:</p>
-			<ul>
-				<li>
-					<input type="checkbox" name="hotel">Гостиница
-				</li>
 
-				<li>
-					<input type="checkbox" name="motel">Мотель
-				</li>
+				<p>Тип жилья:</p>
 
-				<li>
-					<input type="checkbox" name="apartament">Апартаменты
-				</li>
-										
-													</ul>	
-													</label>		
-														</div>
+				<ul>
+					<li>
+						<input type="checkbox" name="hotel">Гостиница
+					</li>
+
+					<li>
+						<input type="checkbox" name="motel">Мотель
+					</li>
+
+					<li>
+						<input type="checkbox" name="apartament">Апартаменты
+					</li>											
+				</ul>	
+
+			</label>		
+		</div>
 
 				
-				<div class="cost-hotel"> 
-				<label>
+		<div class="cost-hotel"> 
+			
+			<label>				
 				<p>Стоимость в сутки (Р):</p>
+				
 				<table class="table-cost">
 					<tr>
 						<td>
-						<p>от 0</p>	
+							<p>от 0</p>	
 						</td>
 
 						<td>
-						<p>до 3000</p>	
+							<p>до 3000</p>	
 						</td>
 
 					</tr>
 				</table>
 				
 				<input type="range">
-				<br>
+				<br>				
 				<input type="submit" name="submit" value="Показать">
-				</label>
+			</label>
 
 
-							</div>
+		</div>
 
-												</section>
+	</section>
 
 
-		<article class="container find-hotel"> <!--Неуверен что через артикл, но секции нужны, к тому же вполне независивый элемент, если что невидимый заголовок можно вставить (надо еще посмотреть как :)) -->	
+<article class="container find-hotel"> <!--Неуверен что через артикл, но секции нужны, к тому же вполне независивый элемент, если что невидимый заголовок можно вставить (надо еще посмотреть как :)) -->	
 					
-					<p>Найдено: 3</p>
+	<p>Найдено: 3</p>
 				
-				<div>
+		<div>
 					
-					<p>Сортировка</p>
+			<p>Сортировка</p>
 					
-					<nav>
-					<ul>
-						<li><input type="submit" value="По цене" name="formoneycost"></li>
+			<nav>
+				
+				<ul>
+					<li><input type="submit" value="По цене" name="formoneycost"></li>
 
-						<li><input type="submit" value="По типу" name="fortypes"></li>
+					<li><input type="submit" value="По типу" name="fortypes"></li>
 
-						<li><input type="submit" value="По рейтингу" name="forstars"></li>
-					</ul>
+					<li><input type="submit" value="По рейтингу" name="forstars"></li>
+				</ul>
 						
-					</nav>
+			</nav>
 								
-								</div>
+		</div>
 
-					<section class="hotels">
-						<img src="img/amara.jpg" alt="Amara" width="135" height="90">
-							<h2>Amara Resort & Spa</h2>
-								<p>Гостиница</p>
-									<p>от 4000р.</p>
-										<input type="button" name="givemore" value="Подробней">
+	<section class="hotels">
 
-										<input type="submit" name="bookit" value="Забронировать">
+		<img src="img/amara.jpg" alt="Amara" width="135" height="90">
+		<h2>Amara Resort & Spa</h2>
+		<p>Гостиница</p>
+		<p>от 4000р.</p>
+		<input type="button" name="givemore" value="Подробней">
+		<input type="submit" name="bookit" value="Забронировать">		
+
+	</section>
+
+
+	<section class="hotels">
+
+		<img src="img/desert.jpg" alt="Amara" width="135" height="90">
+		<h2>Desert Quail Inn</h2>
+		<p>Мотель</p>
+		<p>от 3000р.</p>
+		<input type="button" name="givemore" value="Подробней">
+		<input type="submit" name="bookit" value="Забронировать">		
+
+	</section>
+	
+	<section class="hotels">
+
+		<img src="img/diablo.jpg" alt="Amara" width="135" height="90">
+		<h2>Villas at Poco Diablo</h2>
+		<p>Апартаменты</p>
+		<p>от 2000р.</p>
+		<input type="button" name="givemore" value="Подробней">
+		<input type="submit" name="bookit" value="Забронировать">		
+
+	</section>
 						
-															</section>
-
-						<section class="hotels">
-						<img src="img/desert.jpg" alt="Amara" width="135" height="90">
-							<h2>Desert Quail Inn</h2>
-								<p>Мотель</p>
-									<p>от 3000р.</p>
-										<input type="button" name="givemore" value="Подробней">
-
-										<input type="submit" name="bookit" value="Забронировать">
-						
-															</section>
-
-
-						<section class="hotels">
-						<img src="img/diablo.jpg" alt="Amara" width="135" height="90">
-							<h2>Villas at Poco Diablo</h2>
-								<p>Апартаменты</p>
-									<p>от 2000р.</p>
-										<input type="button" name="givemore" value="Подробней">
-
-										<input type="submit" name="bookit" value="Забронировать">
-						
-															</section>					
-												</article>
+</article>
 					
-						<footer class="bot-section container clearfix">
-			<p class="bot-section-hashtag">#visitSEDONA</p>
+<footer class="bot-section container clearfix">
 			
-			
-				<a href="#" class="social"><img src="img/twitter.svg"></a>
-				<a href="#" class="social"><img src="img/facebook.svg"></a>
-				<a href="#" class="social"><img src="img/youtube.svg"></a>	
-
-				
-			
-
-			<a href="https://up.htmlacademy.ru/htmlcss/19"><img src="img/logoaccademy.png" width="197" height="41" alt="лого аккадемии" class="logohtml"></a>
-
+		<p class="bot-section-hashtag">#visitSEDONA</p>					
+		<a href="#" class="social"><img src="img/twitter.svg"></a>
+		<a href="#" class="social"><img src="img/facebook.svg"></a>
+		<a href="#" class="social"><img src="img/youtube.svg"></a>
+		<a href="https://up.htmlacademy.ru/htmlcss/19"><img src="img/logoaccademy.png" width="197" height="41" alt="лого аккадемии" class="logohtml"></a>
 				<!--Не знаю как покрасить свг, разве что в люстре или кореле -->		
-			</footer>
+</footer>
     
 	
-</body>
-</html>
+  </body>
+ </html>
