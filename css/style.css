@@ -59,8 +59,7 @@ background: white;
 	border-top: 1px solid grey;
 	border-bottom: 1px solid grey;
 	padding: 10px;
-	border-collapse: collapse; /* как тут сделать 
-	одну полосу?*/
+	border-collapse: collapse;
 	margin-top: -1px;
 }
 
