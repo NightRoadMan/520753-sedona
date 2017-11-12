@@ -214,4 +214,116 @@ h3 {
   	margin-top: 30px;
 }
 
+/*Секция с поп-апом*/
 
+.findhotel {
+	background-color: white;
+	height: 294px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.findhotel b {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	margin-top: 60px;
+	padding: 0;
+
+}
+
+.findhotel p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.5;
+	width: 435px;
+	color: #6e6e6e;
+	text-transform: uppercase;
+	margin-top: 30px;
+
+}
+
+.button-popup {
+	width: 568px;
+	height: 86px;
+	color: white;
+	background-color: #766357;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	margin-top: auto;
+	padding: 0;
+
+}
+
+
+.button-popup:hover {
+	background-color: #604e43;
+}
+
+.button-popup:active {
+	background-color: #503e33;
+	color: #928a85;
+}
+
+/*Надо вроде как сделать доступность, 
+но не знаю, как сделать это красиво.
+Ибо если делаю появление абриса, то он и
+с мышки появляется, если цвет, то кнопка
+как бы не отжимается, а не красиво поменяет цвет
+когда щелкнишь по другой части страницы*/
+
+.button-popup:focus {
+	background-color: #503e33;
+	
+}
+
+.map {
+	background-image: url(../img/map.jpg);
+	height: 475px;
+}
+
+.bot-section {
+	background-color: rgba(255, 255, 255, .9);
+	height: 120px;
+}
+
+/*Стилизуем футтер*/
+
+.bot-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bot-section-hashtag {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.social-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social {
+	background-color: #81b3d2;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 3.25;
+	
+}
+
+.social:nth-child(2) {
+	margin: 0 6px 0 6px;
+	line-height: 3.5;
+}
