@@ -49,13 +49,15 @@ background: #f2f2f2;
 .menu-main a:active {
 	color: #1e6a9c;
 }
-
+/**/
 .menu-main a:focus {
 	outline: none;
 	box-shadow: 0 0 0 3px #fff,
 				0 0 0 6px #85b1ce;
 	color: #1e6a9c;
 }
+
+
 
 
 
@@ -231,7 +233,7 @@ h3 {
 	height: 294px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -242,6 +244,7 @@ h3 {
 	color: #000;
 	margin-top: 60px;
 	padding: 0;
+	margin-top: 60px;
 
 }
 
@@ -252,8 +255,12 @@ h3 {
 	width: 435px;
 	color: #6e6e6e;
 	text-transform: uppercase;
-	margin-top: 30px;
+	margin: 0;
+	
+}
 
+.findhotel-text-for-pop {
+	margin-top: -10px;
 }
 
 .button-popup {
@@ -266,7 +273,6 @@ h3 {
 	font-weight: bold;
 	border: none;
 	outline: none;
-	margin-top: auto;
 	padding: 0;
 
 }
@@ -314,11 +320,12 @@ h3 {
 .bot-section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	background-color: rgba(255, 255, 255, .9);
 	height: 120px;
 	margin-top: auto;
+	padding: 0 100px 0 100px;
 
 }
 
@@ -361,11 +368,23 @@ h3 {
 	background-color: #306b8f;
 }
 
+.position-logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.position-logo span{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-right: 7px;
+}
+
 .htmlacademy {	
-	width: 197px;
+	width: 115px;
 	height: 41px;
-	display: block;
-	
+	display: block;		
 }
 .htmlacademy a {
 	display: block;
@@ -385,3 +404,10 @@ h3 {
 	
 }
 
+/*Стилизация hotel*/
+
+.go-to-index:active {
+	outline: none;
+	box-shadow: 0;
+
+}
