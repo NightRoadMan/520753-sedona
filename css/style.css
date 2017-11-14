@@ -27,7 +27,7 @@ background: #f2f2f2;
 }
 
 .menu-main li {
-	display: block;
+	list-style: none;
 }
 
 .menu-main a {
@@ -66,7 +66,8 @@ background: #f2f2f2;
 .background-info {
 	background:
 	url(../img/shape_top.png) no-repeat 50% 100%, 
-	url(../img/background-noflex.jpg) no-repeat;	
+	url(../img/background-noflex.jpg) no-repeat;
+	background-color: #aecce0;	
 	height: 31.875em;
 }
 
@@ -121,6 +122,7 @@ h1 {
 /*Стилизация карточек с описью*/
 
 /*Стилизация 1-вой и 3 карточки*/
+
 .place {
 	display: flex;
 	flex-direction: row;
