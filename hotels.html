@@ -50,42 +50,49 @@
 								</label>
 							</li>
 						</ul>
-					
+				</fieldset>
 			</div>
-
+			
 
 			<div class="typehouse">
 				<fieldset>
 					<legend>Тип жилья:</legend>
 						<ul class="some-input">
 							<li>
-								<label><input type="checkbox" name="hotel">Гостиница</label>
+								<label><input type="checkbox" name="hotel">
+									<span class="icon-check"></span>
+									<span>Гостиница<span>
+								</label>
 							</li>
 
 							<li>
-								<label><input type="checkbox" name="motel">Мотель</label>
+								<label><input type="checkbox" name="motel">
+									<span class="icon-check"></span>
+									<span>Мотель</span></label>
 							</li>
 
 							<li>
-								<label><input type="checkbox" name="apartament">Апартаменты
+								<label><input type="checkbox" name="apartament">
+									<span class="icon-check"></span>
+									<span>Апартаменты</span>
 								</label>
 							</li>
 						</ul>
 				</fieldset>
 			</div>
-
 					
 			<div class="cost-hotel"> 
-				<p>Стоимость в сутки (Р):</p>
+				<p class="cost-per-day">Стоимость в сутки (Р):</p>
 				
 				<div class="display-cost-hotel">
-					<p>от 0</p>
-					<p>до 3000</p>
+					<div class="white-line"></div>
+					<p>от <span id="left_count">0</span></p>
+					<p>до <span id="right_count">3000</span></p>
 
 				</div>
 
-				<input type="range">
-				<button type="submit">Показать</button>
+				<input type="range" name="double-range">
+				<button type="submit" class="button-range">Показать</button>
 			</div>
 
 		</section>
