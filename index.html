@@ -143,27 +143,52 @@
 
 	<footer class="container">
 
-			<section class="map container">
-				<section class="pop-up">   
-					<label for="timetocome">Дата заезда:</label>
-					<input type="text" name="comein" id="timetocome">
-					<button type="button">Календарь</button>
+		<section class="map container">
+				<section class="pop-up">
+					<div class="postion-from-top">
+						<div class="pop-up-flex-date">
+						<label for="timetocome" class="margin-for-full-inputs">Дата заезда:</label>
+							<div class="position-button-input">
+								<input type="text" name="comein" id="timetocome" 
+								class="pop-up-input input-width-pop" placeholder="01.02.2017">
+								<button type="button" class="button-form icon-calendar">
+									<img src="img/calendar.svg" alt="Calendar">
+								</button>
+							</div>
+						</div>
 
-					<label for="timetoout">Дата выезда:</label>
-					<input type="text" name="comeout" id="timetoout">
+						<div class="pop-up-flex-date">
+						<label for="timetoout" class="margin-for-full-inputs">Дата выезда:</label>
+							<div class="position-button-input">
+								<input type="text" name="comeout" id="timetoout" 
+								class="pop-up-input input-width-pop" placeholder="31.03.2017">
+								<button type="button" class="button-form icon-calendar"><img src="img/calendar.svg" alt="Calendar"></button>
+							</div>
+						</div>
 
-					<label for="people">Взрослые:</label>
-					<input type="text" name="people" id="people">
-					<button type="button">+</button>
-					<button type="button">-</button>
+				<div class="flex-all-people-child">
+					<div class="flex-people-child">
+						<label for="people" class="margin-pop-people">Взрослые:</label>
+						<div class="buttons-more-less">
+							<button type="button" class="button-form icon-plus-minus-decor position-minus">-</button>
+							<input type="text" name="people" id="people" class="pop-up-input input-width-pop-mini" placeholder="1">
+							<button type="button" class="button-form icon-plus-minus-decor position-plus">+</button>
+						</div>
+					</div>
 
-					<label for="children">Дети:</label>
-					<input type="text" name="child id="children">
-					<button type="button">+</button>
-					<button type="button">-</button>
+					<div class="flex-people-child">
+						<label for="child" class="margin-pop-child">Дети:</label>
+						<div class="buttons-more-less">
+							<button type="button" class="button-form icon-plus-minus-decor position-minus">-</button>
+							<input type="text" name="people" id="child" class="pop-up-input input-width-pop-mini" placeholder="0">
+							<button type="button" class="button-form icon-plus-minus-decor position-plus">+</button>
+						</div>
+					</div>
+				</div>
 				
-					<button type="sub">Найти</button>
-				</section>
+				<button type="submit" class="button-submit-form">Найти</button>
+				
+			</section>
 		
 			<section class="bot-section">
 				<p class="bot-section-hashtag">#visitsedona</p>

@@ -3,8 +3,10 @@ padding: 0;
 margin: 0;
 font-family: 'PT Sans', Arial, sans-serif;
 background: #f2f2f2;
+}
 
-
+div, p, input, button, form {
+	box-sizing: border-box;
 }
 
 .container {
@@ -13,6 +15,31 @@ background: #f2f2f2;
 	background: white;
 
 }
+
+::-webkit-input-placeholder {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color:#949494;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;}
+::-moz-placeholder {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color:#949494;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;}/* Firefox 19+ */
+:-moz-placeholder {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color:#949494;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;}/* Firefox 18- */
+:-ms-input-placeholder {
+	font-family: 'PT Sans', Arial, sans-serif;
+	color:#949494;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;}
 
 /*Стилизация меню*/
 
@@ -273,8 +300,7 @@ h3 {
 	font-size: 21px;
 	text-transform: uppercase;
 	font-weight: bold;
-	border: none;
-	outline: none;
+	border: none;	
 	padding: 0;
 
 }
@@ -298,17 +324,147 @@ h3 {
 	box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-/*Надо вроде как сделать доступность, 
-но не знаю, как сделать это красиво.
-Ибо если делаю появление абриса, то он и
-с мышки появляется, если цвет, то кнопка
-как бы не отжимается, а не красиво поменяет цвет
-когда щелкнишь по другой части страницы*/
+/*Базовая стилизация инпутов в поп-апе*/
+.pop-up-input {
+	background-color: #f2f2f2;
+	border: 0;
+	height: 38px;
+	padding: 0 40px 0 13px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
-.button-popup:focus {
-	background-color: #503e33;
+.input-width-pop {
+	width: 346px;
+}
+
+
+
+.pop-up label {
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.postion-from-top {
+	margin: 55px 0 0 0;
+}
+
+/*Стилизация первой строки Дата заезда*/
+
+
+.pop-up-flex-date {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.button-form {
+	border: 0;
+	background-color: transparent;
 	
 }
+	
+.icon-calendar {
+	position: absolute;
+	right: 5px;
+	top: 7px;
+}
+
+.margin-for-full-inputs {
+	margin-right: 20px;
+
+}
+
+.position-button-input {
+	position: relative;
+}
+
+.buttons-more-less {
+	position: relative;
+
+}
+
+.input-width-pop-mini {
+	width: 115px;
+	padding: 0 35px 0 35px;
+	text-align: center;
+}
+
+.icon-plus-minus-decor {
+	color: #a9a9a9;
+	font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.position-minus {
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.position-plus {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+}
+
+.flex-people-child {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.flex-all-people-child {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 56px 0 53px;
+
+}
+
+.margin-pop-people {
+	margin-right: 42px;
+}
+
+.margin-pop-child {
+	margin-right: 28px;
+}
+
+.button-submit-form {
+	color: #fff;
+	background-color: #81b3d2;
+	width: 458px;
+	height: 58px;
+	border: 0;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	margin-top: 56px;
+	
+}
+
+.button-submit-form:hover {
+	background-color: #669ec0;
+}
+
+.button-submit-form:active {
+	color: #94b9d2;
+	background-color: #5496bd;
+}
+
+
 
 .map {
 	background-image: url(../img/map.jpg);
