@@ -12,7 +12,7 @@ div, p, input, button, form {
 .container {
 	width: 1200px;
 	margin: 0px auto;
-	background: white;
+	
 
 }
 
@@ -53,6 +53,9 @@ div, p, input, button, form {
 	padding: 0 4.375em 0 4.375em;
 }
 
+.top-section {
+	background-color: #fff;
+}
 .menu-main li {
 	list-style: none;
 }
@@ -484,6 +487,7 @@ h3 {
 	height: 120px;
 	margin-top: auto;
 	padding: 0 100px 0 100px;
+	width: 1000px;
 
 }
 
@@ -686,6 +690,121 @@ legend {
 	color: #fff;
 }
 
+/*Стилизация строки поиска отеля*/
 
+.find-hotel {
+	background-color: #fff;
+}
 
+.howmuchfind {
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin:0;
+	padding: 0;
 
+}
+
+.sort-find {
+	font-size: 12px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.menu-sort li{
+	list-style: none;
+
+}
+
+.menu-sort a {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #cacaca;
+	text-decoration: none;
+	border-bottom: 2px dotted #81b3d2; 
+}
+
+.flex-sort-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin-left: 50px;
+
+}
+
+.menu-sort {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 245px;
+	padding-left: 42px;
+
+}
+.header-find-flex {
+	display: flex;
+	justify-content: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 88px;
+	padding: 0 72px 0 72px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.arrow-marginright {
+	margin-right: 5px;
+}
+
+.flex-text-menusort {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+/*Стилизация первой карточки отеля*/
+
+.hotels {
+	height: 152px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hotels h2 {
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.hotels	p {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #7d7d7d;
+}
+
+.hotels a {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+
+}
+
+.button-more {	
+	padding: 7px 17px 7px 17px;
+	background-color: #81b3d2;
+}
+
+.button-book {
+	padding: 7px 18px 7px 18px;
+	background-color: #766357;
+
+}
