@@ -5,7 +5,7 @@ font-family: 'PT Sans', Arial, sans-serif;
 background: #f2f2f2;
 }
 
-div, p, input, button, form {
+div, p, input, button, form, section {
 	box-sizing: border-box;
 }
 
@@ -773,6 +773,9 @@ legend {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 72px 0 72px;
+
+	
 }
 
 .hotels h2 {
@@ -780,12 +783,13 @@ legend {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000;
+	margin: 0;
 }
 
 .hotels	p {
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #7d7d7d;
+	color: #333333;
 }
 
 .hotels a {
@@ -801,10 +805,59 @@ legend {
 .button-more {	
 	padding: 7px 17px 7px 17px;
 	background-color: #81b3d2;
+	margin: 0 6px 0 0;
 }
 
 .button-book {
 	padding: 7px 18px 7px 18px;
 	background-color: #766357;
+}
 
+.rate-background {	
+	padding: 5px 15px 7px 15px;
+	background-color: #f2f2f2;
+	margin: 0;
+}
+
+.star-rate-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.star-rate-flex div {
+	margin-bottom: 48px;
+}
+
+.descr-cost-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;	
+	padding: 0;
+	height: 35px;
+}
+
+
+
+.descr-cost-margin {
+	margin: 0 40px 0 0;
+}
+
+.flex-hotel {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 30px;
+}
+
+.margin-cost {
+	margin: 0 0 3px 0;
+}
+
+.flex-image-hotel {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
