@@ -5,8 +5,10 @@ font-family: 'PT Sans', Arial, sans-serif;
 background: #f2f2f2;
 }
 
+
 div, p, input, button, form, section {
 	box-sizing: border-box;
+	font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .container {
@@ -41,16 +43,25 @@ div, p, input, button, form, section {
 	text-transform: uppercase;
 	font-weight: bold;}
 
+.shadow {
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	width: 1200px;
+	margin: 0px auto;
+	z-index: 0;
+
+}
+
 /*Стилизация меню*/
 
 .menu-main {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 3.5em;
+	height: 55px;
 	align-items:center;
 	margin: 0;
-	padding: 0 4.375em 0 4.375em;
+	padding: 0 70px 0 70px;
 }
 
 .top-section {
@@ -77,19 +88,14 @@ div, p, input, button, form, section {
 }
 
 .menu-main a:active {
-	color: #1e6a9c;
+	color: rgba(0, 0, 0, 0.3);
 }
+
+.active a {
+	color: #766357;
+}
+
 /**/
-.menu-main a:focus {
-	outline: none;
-	box-shadow: 0 0 0 3px #fff,
-				0 0 0 6px #85b1ce;
-	color: #1e6a9c;
-}
-
-
-
-
 
 /*Стилизация хедер секции с картинкой*/
 
@@ -98,7 +104,7 @@ div, p, input, button, form, section {
 	url(../img/shape_top.png) no-repeat 50% 100%, 
 	url(../img/background-noflex.jpg) no-repeat;
 	background-color: #aecce0;	
-	height: 31.875em;
+	height: 510px;
 }
 
 .main-section {
@@ -125,7 +131,7 @@ div, p, input, button, form, section {
 
 .description-sedona {
 	background-color: white;
-	height: 13.5em;
+	height: 218px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -139,14 +145,16 @@ h1 {
   	width: 440px;
  	margin: 0 auto;
  	text-align: center;
- 	margin-bottom: 2em;
+ 	margin-bottom: 40px;
+ 	line-height: 26px;
 }
 
 .description-causes {	
 	font-size: 14px;
  	text-transform: uppercase;
  	margin: 0 auto;
- 	color: #6e6e6e;;
+ 	color: #333333;;
+ 	line-height: 26px;
 }
 
 /*Стилизация карточек с описью*/
@@ -176,6 +184,7 @@ h3 {
  	color: white;
  	width: 155px;
  	text-align: center;
+ 	line-height: 21px; 	
 }
 
 .info-blueback p {
@@ -184,6 +193,7 @@ h3 {
  	color: white;
   	text-align: center;
   	margin-top: 30px;
+  	line-height: 21px;
 }
 
 .info-blueback-descrip {
@@ -195,7 +205,7 @@ h3 {
 
 .second-infodescrip {
 	background-color: white;
-	height: 20.625em;
+	height: 330px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -221,15 +231,16 @@ h3 {
    	text-align: center;
   	width: 290px;
   	text-transform: uppercase;
-  	color: #6e6e6e;
+  	color: #333;
   	margin-top: 30px;
+  	line-height: 21px;
 }
 
 /*Стилизуем 4-тую карточку*/
 
 .forth-infodescrip {
 	background-color: #eee;
-	height: 16em;
+	height: 256px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -254,7 +265,7 @@ h3 {
    	text-align: center;
   	width: 263px;
   	text-transform: uppercase;
-  	color: #6e6e6e;
+  	color: #333;
   	margin-top: 30px;
 }
 
@@ -284,16 +295,12 @@ h3 {
 	font-size: 14px;
 	text-align: center;
 	line-height: 1.5;
-	width: 435px;
-	color: #6e6e6e;
+	width: 300px;
+	color: #333;
 	text-transform: uppercase;
 	margin: 0;
-	
 }
 
-.findhotel-text-for-pop {
-	margin-top: -10px;
-}
 
 .button-popup {
 	width: 568px;
@@ -306,8 +313,8 @@ h3 {
 	border: none;	
 	padding: 0;
 
-}
 
+}
 
 .button-popup:hover {
 	background-color: #604e43;
@@ -315,7 +322,7 @@ h3 {
 
 .button-popup:active {
 	background-color: #503e33;
-	color: #928a85;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /*Стилизация самого поп-апа*/
@@ -496,6 +503,7 @@ h3 {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 21px;
+	cursor: pointer;
 }
 
 .social-flex {
@@ -541,6 +549,7 @@ h3 {
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-right: 7px;
+	cursor: pointer;
 }
 
 .htmlacademy {	
@@ -574,14 +583,31 @@ h3 {
 
 }
 
-/*Флексим замылную секцию с инпутами*/
+/*Флексим замыленную секцию с инпутами*/
 .bluredbackground {
 	background: url(../img/bluredbackground-noflex.jpg) no-repeat;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	height: 219px;
+	padding: 0 73px 0 73px;
+}
+
+.infostr-and-typehouse {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left:-12px;
+}
+
+.infrastructure {
+	width: 145px;
+}
+
+.typehouse {
+	margin-left: 100px;
 }
 
 fieldset { 
@@ -690,6 +716,7 @@ legend {
 	color: #fff;
 }
 
+
 /*Стилизация строки поиска отеля*/
 
 .find-hotel {
@@ -719,7 +746,7 @@ legend {
 .menu-sort a {
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #cacaca;
+	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	border-bottom: 2px dotted #81b3d2; 
 }
