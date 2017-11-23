@@ -1,6 +1,4 @@
 body {
-padding: 0;
-margin: 0;
 font-family: 'PT Sans', Arial, sans-serif;
 background: #f2f2f2;
 }
@@ -14,8 +12,11 @@ div, p, input, button, form, section {
 .container {
 	width: 1200px;
 	margin: 0px auto;
-	
 
+}
+
+.content-box-component {
+	box-sizing: content-box;
 }
 
 ::-webkit-input-placeholder {
@@ -62,6 +63,7 @@ div, p, input, button, form, section {
 	align-items:center;
 	margin: 0;
 	padding: 0 70px 0 70px;
+	flex-wrap: wrap;
 }
 
 .top-section {
@@ -69,6 +71,14 @@ div, p, input, button, form, section {
 }
 .menu-main li {
 	list-style: none;
+}
+
+.menu-main li:nth-child(2) {
+	margin-right: 120px;
+}
+
+.menu-main li:nth-child(3) {
+	margin-left: 120px;
 }
 
 .menu-main a {
@@ -79,9 +89,6 @@ div, p, input, button, form, section {
 	color: #000;
 }
 
-.menu-main li:nth-child(3) {
-	margin-top: 18px;	
-}
 
 .menu-main a:hover {
 	color: #85b1ce;
@@ -95,6 +102,17 @@ div, p, input, button, form, section {
 	color: #766357;
 }
 
+.go-to-index {
+	display: block;
+	position: absolute;
+	left: 46.666%;
+	top: 0;
+}
+
+.go-to-index:active {
+	outline: none;
+	box-shadow: 0;
+}
 /**/
 
 /*Стилизация хедер секции с картинкой*/
@@ -111,7 +129,7 @@ div, p, input, button, form, section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 
+
 }
 
 .welcome {
@@ -294,8 +312,7 @@ h3 {
 .findhotel p {
 	font-size: 14px;
 	text-align: center;
-	line-height: 1.5;
-	width: 300px;
+	line-height: 1.5;	
 	color: #333;
 	text-transform: uppercase;
 	margin: 0;
@@ -345,11 +362,20 @@ h3 {
 	font-weight: bold;
 }
 
+.pop-up-input:hover {
+	background-color: #ebebeb;
+}
+
+.pop-up-input:active,
+ .pop-up-input:focus {
+	background-color: transparent;
+	border: 2px solid #e5e5e5;
+	outline: none;
+}
+
 .input-width-pop {
 	width: 346px;
 }
-
-
 
 .pop-up label {
 	color: #000;
@@ -510,6 +536,7 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-left: 65px;
 }
 .social {
 	background-color: #81b3d2;
@@ -557,32 +584,22 @@ h3 {
 	height: 41px;
 	display: block;		
 }
-.htmlacademy a {
-	display: block;
-	height: 100%;
-	background: url(../img/logoaccademy.png) no-repeat;
+
+.svg-logo path {
+	fill: #231f20;
 }
 
-.htmlacademy a:hover {
-	background: url(../img/logoaccademy-blue.png) no-repeat;
-	
-	
+.link-svg-logo:hover .svg-logo path {
+	fill: #81b3d2;
 }
 
-.htmlacademy a:active {
-	background: url(../img/logoaccademy-grey.png) no-repeat;
-
-	
+.link-svg-logo:active .svg-logo path {
+	fill: #bdbbbc;
 }
+
+
 
 /*Стилизация hotel*/
-
-.go-to-index:active {
-	outline: none;
-	box-shadow: 0;
-
-}
-
 /*Флексим замыленную секцию с инпутами*/
 .bluredbackground {
 	background: url(../img/bluredbackground-noflex.jpg) no-repeat;
@@ -667,56 +684,6 @@ legend {
 	display:none;
 }
 
-.cost-hotel p {
-	font-size: 16px;
-	text-transform: uppercase;	
-	color: #fff;
-}
-
-.cost-per-day {
-	font-weight: bold;
-	margin: 0 0 17px 0;
-}
-
-.display-cost-hotel {
-	width: 317px;
-	height: 35px;
-	border: 2px solid #fff;
-	border-radius: 3px;
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 46px 0 65px;
-}
-
-.white-line {
-	width: 2px;
-	height: 22px;
-	background-color: #fff;
-	display: block;
-	position: absolute;
-	left: 160px;
-	top: 4px;
-}
-
-.button-range {
-	background-color: transparent;
-	border: 2px solid #fff;
-	border-radius: 3px;
-	width: 136px;
-	height: 35px;
-	display: block;
-	margin-left: 97px;
-	margin-top: 27px;
-
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #fff;
-}
-
-
 /*Стилизация строки поиска отеля*/
 
 .find-hotel {
@@ -751,6 +718,21 @@ legend {
 	border-bottom: 2px dotted #81b3d2; 
 }
 
+.menu-sort a:hover {
+	color: #81b3d2;
+	border-bottom: 2px dotted #81b3d2; 
+}
+
+.menu-sort a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.menu-sort a:focus {
+	color: #81b3d2;
+	border-bottom: none; 
+}
+
 .flex-sort-nav {
 	display: flex;
 	flex-direction: row;
@@ -779,8 +761,26 @@ legend {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.arrow-marginright {
+.arrow-find {	
+	cursor: pointer;	
+	display: inline-block;
+}
+
+.arrow-find:first-child {
 	margin-right: 5px;
+}
+
+.color-svg-up path{
+	fill: #cacaca;
+}
+
+.arrow-find:hover .color-svg-up path {
+	fill: #231f20;
+}
+
+.arrow-find:active,
+.arrow-find:focus .color-svg-up path{
+	fill: #81b3d2;
 }
 
 .flex-text-menusort {
@@ -811,6 +811,15 @@ legend {
 	text-transform: uppercase;
 	color: #000;
 	margin: 0;
+	cursor: pointer;
+}
+
+.hotels h2:hover {
+	color: #81b3d2;
+}
+
+.hotels h2:active {
+	color: rgba(0,0,0,0.3);
 }
 
 .hotels	p {
@@ -829,6 +838,8 @@ legend {
 
 }
 
+/*Оформление кнопок и их поведение
+кнопки-брони и подробней*/
 .button-more {	
 	padding: 7px 17px 7px 17px;
 	background-color: #81b3d2;
@@ -838,6 +849,24 @@ legend {
 .button-book {
 	padding: 7px 18px 7px 18px;
 	background-color: #766357;
+}
+
+.button-more:hover {
+	background-color: #669ec0;
+}
+
+.button-more:active {
+	background-color: #669ec0;
+	color: rgba(255,255,255,0.3);
+}
+
+.button-book:hover {
+	background-color: #604e43;
+}
+
+.button-book:active {
+	background-color: #503e33;
+	color: rgba(255,255,255,0.3);
 }
 
 .rate-background {	
@@ -887,4 +916,143 @@ legend {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+
+/*Для ползунка*/
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.filter-range-title {
+	margin-bottom: 9px;
+
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+
+	height: 36px;
+	margin-bottom: 20px;
+
+	font-size: 0;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 2px;
+	height: 22px;
+
+	background: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+	display: inline-block;
+
+	font-size: 14px;
+	line-height: 32px;
+	vertical-align: top;
+
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.price-controls input {
+	width: 50px;
+	margin: 0;
+
+	color: inherit;
+	font: inherit;
+
+	background: none;
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	background-color: #ababab;
+	
+	width: 4px;
+	height: 4px;
+
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.btn-transparent:hover {
+	color: #000000;
+
+	background: #ffffff;
 }
