@@ -404,12 +404,35 @@ h3 {
 	background-color: transparent;
 	
 }
-	
+
+/*Оформление иконки календаря + стилизация поведения*/
 .icon-calendar {
 	position: absolute;
 	right: 5px;
 	top: 7px;
+	outline: none;	
 }
+
+.icon-calendar:focus {
+	border: 1px solid #a9a9a9;
+}
+
+.icon-svg-calendar path {
+	fill: #cacaca;
+}
+
+.icon-svg-calendar:hover path {
+	fill: #000;
+}
+
+
+.icon-svg-calendar:active path {
+	fill: #81b3d2;
+}
+
+/*-----------------------------------*/
+
+/*Внешний оступ для инпутов поп-апа*/
 
 .margin-for-full-inputs {
 	margin-right: 20px;
@@ -436,6 +459,19 @@ h3 {
 	font-size: 25px;
 	font-weight: bold;
 	cursor: pointer;
+	outline: none;
+}
+
+.icon-plus-minus-decor:hover {
+	color: #000;
+}
+
+.icon-plus-minus-decor:active {
+	color: #81b3d2;
+}
+
+.icon-plus-minus-decor:focus {
+	border: 1px solid #a9a9a9;
 }
 
 .position-minus {
@@ -675,9 +711,19 @@ legend {
 	margin-left: 10px;	
 }
 
+/*Кастомизация вида checkbox-ов, и стилизация их поведения
+а так же вид при блокировки*/
+
 .some-input input[type="checkbox"]:checked + .icon-check{
  	background: url(../img/checkbox-on.svg) no-repeat;
+}
 
+.some-input input[disabled*="off"] + .icon-check{
+ 	background: url(../img/checkbox-off-grey.svg) no-repeat;
+}
+
+.some-input input[checked="on"]:checked + .icon-check{
+ 	background: url(../img/checkbox-on-grey.svg) no-repeat;
 }
 
 .some-input input[type="checkbox"]{
