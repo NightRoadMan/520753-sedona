@@ -12,7 +12,6 @@ div, p, input, button, form, section {
 .container {
 	width: 1200px;
 	margin: 0px auto;
-
 }
 
 .content-box-component {
@@ -59,11 +58,11 @@ div, p, input, button, form, section {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 55px;
 	align-items:center;
 	margin: 0;
-	padding: 0 70px 0 70px;
+	padding: 20px 70px 20px 70px;
 	flex-wrap: wrap;
+	margin-top: -3px;
 }
 
 .top-section {
@@ -71,14 +70,18 @@ div, p, input, button, form, section {
 }
 .menu-main li {
 	list-style: none;
-}
-
-.menu-main li:nth-child(2) {
-	margin-right: 120px;
+	width: 240px;
 }
 
 .menu-main li:nth-child(3) {
-	margin-left: 120px;
+	text-align: right;
+	margin-left: auto;	
+	margin-right: 4px;
+
+}
+
+.menu-main li:nth-child(4) {
+	text-align: right;	
 }
 
 .menu-main a {
@@ -105,8 +108,9 @@ div, p, input, button, form, section {
 .go-to-index {
 	display: block;
 	position: absolute;
-	left: 46.666%;
+	left: 50%;
 	top: 0;
+	margin-left: -70px;
 }
 
 .go-to-index:active {
@@ -122,14 +126,13 @@ div, p, input, button, form, section {
 	url(../img/shape_top.png) no-repeat 50% 100%, 
 	url(../img/background-noflex.jpg) no-repeat;
 	background-color: #aecce0;	
-	height: 510px;
+	
 }
 
 .main-section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 .welcome {
@@ -142,7 +145,8 @@ div, p, input, button, form, section {
 }
 
 .grandcanyon {
-	margin-top: 60px;
+	margin-top: 55px;
+	margin-bottom: 80px;
 }
 
 /*Стилизация второй секции*/
@@ -154,6 +158,7 @@ div, p, input, button, form, section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 66px 0 60px 0;
 }
 
 h1 {	
@@ -163,7 +168,7 @@ h1 {
   	width: 440px;
  	margin: 0 auto;
  	text-align: center;
- 	margin-bottom: 40px;
+ 	margin-bottom: 25px;
  	line-height: 26px;
 }
 
@@ -188,10 +193,10 @@ h1 {
 .info-blueback {
 	background-color: #81b3d2;
 	width: 400px;
-	height: 256px;
+	padding: 46px 0 60px 0;	
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -202,38 +207,46 @@ h3 {
  	color: white;
  	width: 155px;
  	text-align: center;
- 	line-height: 21px; 	
+ 	line-height: 21px;
 }
 
 .info-blueback p {
 	font-size: 14px; 	
  	margin: 0 auto;
  	color: white;
-  	text-align: center;
-  	margin-top: 30px;
+  	text-align: center;  	
   	line-height: 21px;
 }
 
 .info-blueback-descrip {
-	width: 280px;
-	text-transform: uppercase;
+	width: 285px;
+	text-transform: uppercase;	
+}
+
+.info-blueback-descrip-dop {
+	width: 310px;
+	text-transform: uppercase;	
+}
+
+.margin-side-number {
+	margin: 30px 0 30px 0;
 }
 
 /*Стилизация описаний с иконками*/
 
 .second-infodescrip {
 	background-color: white;
-	height: 330px;
+	padding: 56px 0 79px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
 }
 
 
 .second-infodescrip h3 {
 	color: black;
-	margin-top: 30px;
+	margin-top: 26px;
 }
 
 .flex-section-icon {
@@ -250,7 +263,7 @@ h3 {
   	width: 290px;
   	text-transform: uppercase;
   	color: #333;
-  	margin-top: 30px;
+  	margin-top: 27px;
   	line-height: 21px;
 }
 
@@ -258,7 +271,7 @@ h3 {
 
 .forth-infodescrip {
 	background-color: #eee;
-	height: 256px;
+	padding: 50px 0 61px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -284,14 +297,15 @@ h3 {
   	width: 263px;
   	text-transform: uppercase;
   	color: #333;
-  	margin-top: 30px;
+  	margin-top: 21px;
+  	line-height: 21px;
 }
 
 /*Секция с поп-апом*/
 
 .findhotel {
 	background-color: white;
-	height: 294px;
+	padding: 	50px 0 0 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -302,20 +316,17 @@ h3 {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #000;
-	margin-top: 60px;
+	color: #000;	
 	padding: 0;
-	margin-top: 60px;
-
 }
 
 .findhotel p {
 	font-size: 14px;
 	text-align: center;
-	line-height: 1.5;	
+	line-height: 24px;	
 	color: #333;
 	text-transform: uppercase;
-	margin: 0;
+	margin: 26px 0 46px 0;
 }
 
 
@@ -329,8 +340,6 @@ h3 {
 	font-weight: bold;
 	border: none;	
 	padding: 0;
-
-
 }
 
 .button-popup:hover {
@@ -459,7 +468,7 @@ h3 {
 	font-size: 25px;
 	font-weight: bold;
 	cursor: pointer;
-	outline: none;
+	
 }
 
 .icon-plus-minus-decor:hover {
@@ -468,10 +477,6 @@ h3 {
 
 .icon-plus-minus-decor:active {
 	color: #81b3d2;
-}
-
-.icon-plus-minus-decor:focus {
-	border: 1px solid #a9a9a9;
 }
 
 .position-minus {
@@ -523,7 +528,7 @@ h3 {
 	text-transform: uppercase;
 	display: block;
 	margin: 0 auto;
-	margin-top: 56px;
+	margin-top: 54px;
 	
 }
 
@@ -566,21 +571,23 @@ h3 {
 	font-weight: bold;
 	font-size: 21px;
 	cursor: pointer;
+	line-height: 26px;
+	margin-left: 32px;
 }
 
 .social-flex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 65px;
+	margin-left: 31px;
 }
+
 .social {
 	background-color: #81b3d2;
-	width: 48px;
+	width: 46px;
 	height: 48px;
 	text-align: center;
 	line-height: 3.25;
-	
 }
 
 .social:nth-child(2) {
@@ -633,8 +640,6 @@ h3 {
 	fill: #bdbbbc;
 }
 
-
-
 /*Стилизация hotel*/
 /*Флексим замыленную секцию с инпутами*/
 .bluredbackground {
@@ -642,17 +647,17 @@ h3 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	height: 219px;
-	padding: 0 73px 0 73px;
+	align-items: center;	
+	padding: 0 73px 0 71px	
 }
 
 .infostr-and-typehouse {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
-	margin-left:-12px;
+	align-items: center;	
+	margin-top: -20px;
+	
 }
 
 .infrastructure {
@@ -660,16 +665,15 @@ h3 {
 }
 
 .typehouse {
-	margin-left: 100px;
+	margin-left: 108px;
+
 }
 
 fieldset { 
 	border: none;
 	display:block;
 	width: 180px;
-	height: 180px;
-	margin-top: 30px;
-
+	padding: 0;
 }
 
 legend {
@@ -677,15 +681,14 @@ legend {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
-
 }
-
 
 .some-input li {
 	list-style: none;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #fff;
+	margin-top: 5px;
 }
 
 .some-input label {
@@ -694,6 +697,9 @@ legend {
 	height: 23px;
 	margin-top: 25px;
 }
+
+/*Кастомизация вида checkbox-ов, и стилизация их поведения
+а так же вид при блокировки*/
 
 .some-input input[type="checkbox"] + .icon-check {
 	background: url(../img/checkbox-off.svg) no-repeat;
@@ -710,10 +716,6 @@ legend {
 .margin-table {
 	margin-left: 10px;	
 }
-
-/*Кастомизация вида checkbox-ов, и стилизация их поведения
-а так же вид при блокировки*/
-
 .some-input input[type="checkbox"]:checked + .icon-check{
  	background: url(../img/checkbox-on.svg) no-repeat;
 }
@@ -772,11 +774,6 @@ legend {
 .menu-sort a:active {
 	color: #000000;
 	border-bottom: none;
-}
-
-.menu-sort a:focus {
-	color: #81b3d2;
-	border-bottom: none; 
 }
 
 .flex-sort-nav {
@@ -965,10 +962,16 @@ legend {
 }
 
 
+
 /*Для ползунка*/
 
+.cost-hotel {
+	margin-top: -3px;
+	margin-right: 1px;
+}
+
 .filter-range {
-  width: 330px;
+  width: 317px;
   margin: 50px auto; /* для демо */
 
 	color: #ffffff;
@@ -978,7 +981,7 @@ legend {
 .filter-range-title {
 	margin-bottom: 9px;
 
-	font-weight: 600;
+	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -1012,7 +1015,7 @@ legend {
 	display: inline-block;
 
 	font-size: 14px;
-	line-height: 32px;
+	line-height: 30px;
 	vertical-align: top;
 
 	cursor: pointer;
@@ -1021,7 +1024,7 @@ legend {
 .price-controls .min-price,
 .price-controls .max-price {
 	width: 90px;
-	padding-left: 65px;
+	padding-left: 62px;	
 }
 
 .price-controls input {
@@ -1084,7 +1087,7 @@ legend {
 .btn-transparent {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
+	padding: 6px 33px;
 
 	font-size: 14px;
 	line-height: 20px;
