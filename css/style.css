@@ -49,6 +49,7 @@ div, p, input, button, form, section {
 	width: 1200px;
 	margin: 0px auto;
 	z-index: 0;
+	position: relative;
 
 }
 
@@ -70,7 +71,7 @@ div, p, input, button, form, section {
 }
 .menu-main li {
 	list-style: none;
-	width: 240px;
+	width: 20%;
 }
 
 .menu-main li:nth-child(3) {
@@ -113,11 +114,7 @@ div, p, input, button, form, section {
 	margin-left: -70px;
 }
 
-.go-to-index:active {
-	outline: none;
-	box-shadow: 0;
-}
-/**/
+
 
 /*Стилизация хедер секции с картинкой*/
 
@@ -207,7 +204,6 @@ h3 {
  	color: white;
  	width: 155px;
  	text-align: center;
- 	line-height: 21px;
 }
 
 .info-blueback p {
@@ -340,6 +336,7 @@ h3 {
 	font-weight: bold;
 	border: none;	
 	padding: 0;
+	border-radius: none;
 }
 
 .button-popup:hover {
@@ -411,6 +408,7 @@ h3 {
 .button-form {
 	border: 0;
 	background-color: transparent;
+	border-radius: none;
 	
 }
 
@@ -419,11 +417,7 @@ h3 {
 	position: absolute;
 	right: 5px;
 	top: 7px;
-	outline: none;	
-}
-
-.icon-calendar:focus {
-	border: 1px solid #a9a9a9;
+	
 }
 
 .icon-svg-calendar path {
@@ -571,15 +565,17 @@ h3 {
 	font-weight: bold;
 	font-size: 21px;
 	cursor: pointer;
-	line-height: 26px;
-	margin-left: 32px;
+	line-height: 26px;	
+	width: 33.33%;
+	text-align: left;
+	margin: 0;
 }
 
 .social-flex {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	margin-left: 31px;
+	align-items: center;	
+	width: 33.33%;
 }
 
 .social {
@@ -611,15 +607,16 @@ h3 {
 .position-logo{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+	width: 33.33%;
+
 }
 
 .position-logo span{
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-right: 7px;
-	cursor: pointer;
 }
 
 .htmlacademy {	
@@ -643,7 +640,7 @@ h3 {
 /*Стилизация hotel*/
 /*Флексим замыленную секцию с инпутами*/
 .bluredbackground {
-	background: url(../img/bluredbackground-noflex.jpg) no-repeat;
+	background: #506572 url(../img/bluredbackground-noflex.jpg) no-repeat;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -751,6 +748,11 @@ legend {
 	font-size: 12px;
 	color: #000;
 	text-transform: uppercase;
+}
+
+.menu-sort {
+	margin: 0;
+	padding: 0;
 }
 
 .menu-sort li{
@@ -937,11 +939,17 @@ legend {
 	height: 35px;
 }
 
+.descr-cost-flex p {
+	margin: 0;
+	padding: 0;
+}
 
 
 .descr-cost-margin {
 	margin: 0 40px 0 0;
 }
+
+
 
 .flex-hotel {
 	display: flex;
@@ -1102,6 +1110,5 @@ legend {
 
 .btn-transparent:hover {
 	color: #000000;
-
 	background: #ffffff;
 }
