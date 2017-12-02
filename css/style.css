@@ -5,8 +5,7 @@ background: #f2f2f2;
 
 
 div, p, input, button, form, section {
-	box-sizing: border-box;
-	font-family: 'PT Sans', Arial, sans-serif;
+	box-sizing: border-box;	
 }
 
 .container {
@@ -60,17 +59,20 @@ div, p, input, button, form, section {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items:center;
+	flex-wrap: wrap;
+
 	margin: 0;
 	padding: 20px 70px 20px 70px;
-	flex-wrap: wrap;
 	margin-top: -3px;
 }
 
 .top-section {
 	background-color: #fff;
 }
+
 .menu-main li {
 	list-style: none;
+
 	width: 20%;
 }
 
@@ -80,6 +82,7 @@ div, p, input, button, form, section {
 
 .menu-main li:nth-child(3) {
 	text-align: right;
+
 	margin-left: auto;
 	margin-right: 32px;
 
@@ -115,10 +118,9 @@ div, p, input, button, form, section {
 	position: absolute;
 	left: 50%;
 	top: 0;
+
 	margin-left: -70px;
 }
-
-
 
 /*Стилизация хедер секции с картинкой*/
 
@@ -127,8 +129,7 @@ div, p, input, button, form, section {
 	url(../img/shape_top.png) no-repeat 50% 100%, 
 	url(../img/background-noflex.jpg) no-repeat;
 	background-size: 100%, cover;
-	background-color: #aecce0;	
-	
+	background-color: #aecce0;
 }
 
 .main-section {
@@ -152,32 +153,36 @@ div, p, input, button, form, section {
 
 /*Стилизация второй секции*/
 
-.description-sedona {
-	background-color: white;	
+.description-sedona {	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	padding: 60px 0 53px 0;
+
+	background-color: white;
 }
 
 .description-sedona h1 {
 	font-size: 21px;
 	font-weight: bold;
- 	text-transform: uppercase;
-  	width: 440px;
- 	margin: 0 auto;
- 	text-align: center;
- 	margin-bottom: 25px;
- 	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 26px;
+
+	width: 440px;
+	margin: 0 auto;
+	margin-bottom: 26px;
 }
 
-.description-causes {	
+.description-causes {
 	font-size: 14px;
- 	text-transform: uppercase;
- 	margin: 0 auto;
- 	color: #333333;;
- 	line-height: 26px;
+	text-transform: uppercase;	
+	color: #333333;;
+	line-height: 26px;
+
+	margin: 0 auto;
 }
 
 /*Стилизация карточек с описью*/
@@ -187,29 +192,29 @@ div, p, input, button, form, section {
 .place {
 	display: flex;
 	flex-direction: row;
-	
 }
 
 .info-blueback {
-	background-color: #81b3d2;
-	width: 400px;
-	padding: 46px 0 60px 0;	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+
+	background-color: #81b3d2;
+	width: 400px;
+
+	padding: 46px 0 60px 0;	
 }
 
 .info-blueback h3 {
 	font-size: 21px;
 	text-transform: uppercase;
-	font-size: 21px;
- 	text-transform: uppercase;
- 	margin: 0 auto;
- 	color: white;
- 	width: 155px;
- 	text-align: center;
- 	line-height: 21px;
+	color: white;
+	width: 155px;
+	text-align: center;
+	line-height: 21px;
+
+	margin:0;
 }
 
 
@@ -223,11 +228,13 @@ div, p, input, button, form, section {
 
 .info-blueback-descrip {
 	width: 285px;
+
 	text-transform: uppercase;	
 }
 
 .info-blueback-descrip-dop {
 	width: 310px;
+
 	text-transform: uppercase;	
 }
 
@@ -238,12 +245,13 @@ div, p, input, button, form, section {
 /*Стилизация описаний с иконками*/
 
 .second-infodescrip {
-	background-color: white;
-	padding: 56px 0 79px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: baseline;
+
+	background-color: white;
+	padding: 56px 0 66px 0;
 }
 
 .flex-section-icon {
@@ -255,34 +263,37 @@ div, p, input, button, form, section {
 
 .flex-section-icon h3 {
 	font-size: 21px;
- 	text-transform: uppercase;
- 	margin: 0 auto;
- 	color: #000;
- 	text-align: center;
- 	line-height: 21px;
- 	margin-top: 26px;
+	text-transform: uppercase;
+
+	color: #000;
+	text-align: center;
+	line-height: 21px;
+
+	margin: 28px 0 0 0;
 }
 
 .flex-section-icon p {
-	font-size: 14px; 	
- 	margin: 0 auto;
-   	text-align: center;
-  	width: 290px;
-  	text-transform: uppercase;
-  	color: #333;
-  	margin-top: 27px;
-  	line-height: 21px;
+	font-size: 14px;	
+	text-align: center;	
+	text-transform: uppercase;
+	color: #333;
+	margin-top: 25px;
+	line-height: 21px;
+	width: 290px;
+	
 }
 
 /*Стилизуем 4-тую карточку*/
 
 .forth-infodescrip {
-	background-color: #eee;
-	padding: 50px 0 61px 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+
+	background-color: #eee;
+
+	padding: 50px 0 48px 0;
 }
 
 
@@ -297,22 +308,23 @@ div, p, input, button, form, section {
 .flex-section-text h3 {
 	font-size: 21px;
 	text-transform: uppercase;
-	margin: 0 auto;
 	color: #000;
 	text-align: center;
 	line-height: 21px;
+	margin: 0 0 25px 0;
+
 	width: 120px;
+
 }
 
 .flex-section-text p {
 	font-size: 14px;
-	margin: 0 auto;
 	text-align: center;
-	width: 263px;
 	text-transform: uppercase;
 	color: #333;
-	margin-top: 21px;
+	margin: 0 0 15px 0;
 	line-height: 21px;
+	width: 263px;
 }
 
 /*Секция с поп-апом*/
@@ -354,7 +366,8 @@ div, p, input, button, form, section {
 	font-weight: bold;
 	border: none;	
 	padding: 0;
-	border-radius: none;
+	border-radius: 0;
+	font-family: inherit;
 }
 
 .button-popup:hover {
@@ -367,6 +380,16 @@ div, p, input, button, form, section {
 }
 
 /*Стилизация самого поп-апа*/
+
+.pop-up-close {
+	display: none;
+}
+
+.pop-up-open {
+	display: block;	
+}
+
+
 .pop-up {	
 	width: 568px;
 	background-color: white;
@@ -378,7 +401,7 @@ div, p, input, button, form, section {
 /*Базовая стилизация инпутов в поп-апе*/
 .pop-up-input {
 	background-color: #f2f2f2;
-	border: 0;
+	border: 2px solid #fff;
 	height: 38px;
 	padding: 0 40px 0 13px;
 	font-size: 14px;
@@ -421,9 +444,10 @@ div, p, input, button, form, section {
 }
 
 .button-form {
+	font-family: 'PT Sans', Arial, sans-serif;
 	border: 0;
 	background-color: transparent;
-	border-radius: none;
+	border-radius: 0;
 	
 }
 
@@ -538,6 +562,8 @@ div, p, input, button, form, section {
 	display: block;
 	margin: 0 auto;
 	margin-top: 54px;
+	border-radius: 0;
+	font-family: inherit;
 	
 }
 
@@ -558,6 +584,7 @@ div, p, input, button, form, section {
 	height: 594px;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 /*Стилизуем футтер*/
@@ -565,12 +592,12 @@ div, p, input, button, form, section {
 .bot-section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	background-color: rgba(255, 255, 255, .9);	
 	margin-top: auto;
-	padding: 36px 100px 36px 100px;
-	width: 1000px;
+	padding: 37px 0 37px 0;
+	
 
 }
 
@@ -583,8 +610,8 @@ div, p, input, button, form, section {
 	line-height: 26px;	
 	width: 33.33%;
 	text-align: left;
-	margin: 0;
-	padding-left: 31px;
+	margin: 0;	
+	padding-left: 133px;
 }
 
 .social-flex {
@@ -626,13 +653,14 @@ div, p, input, button, form, section {
 	justify-content: flex-end;
 	align-items: center;
 	width: 33.33%;
+	padding-right: 99px;
 
 }
 
 .position-logo span{
 	font-size: 14px;
 	text-transform: uppercase;
-	margin-right: 7px;
+	margin-right: 8px;
 }
 
 .svg-logo path {
@@ -663,9 +691,7 @@ div, p, input, button, form, section {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;	
-	margin-top: 12px;
-	
+	align-items: center;
 }
 
 .infrastructure {
@@ -677,32 +703,47 @@ div, p, input, button, form, section {
 
 }
 
-fieldset { 
+.infostr-and-typehouse fieldset { 
 	border: none;
 	display:block;
 	width: 180px;
 	padding: 0;
+	margin-top: 5px;
 }
 
-legend {
+.infostr-and-typehouse legend {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #fff;
+	color: #fff;	
+	margin-bottom: 30px;	
 }
 
+.some-input {
+
+	margin: 0;
+}
 .some-input li {
 	list-style: none;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #fff;	
+	color: #fff;
+	margin-bottom: 22px;	
 }
+
+.some-input li:last-child {
+	margin-bottom: 0;
+}
+
+.some-input li:first-child {
+	margin-top:-2px;
+}
+
 
 .some-input label {
 	display: block;
 	position: relative;	
 	height: 23px;
-	margin-top: 25px;
 }
 
 /*Кастомизация вида checkbox-ов, и стилизация их поведения
@@ -727,11 +768,11 @@ legend {
  	background: url(../img/checkbox-on.svg) no-repeat;
 }
 
-.some-input input[disabled*="off"] + .icon-check{
+.some-input input[disabled] + .icon-check{
  	background: url(../img/checkbox-off-grey.svg) no-repeat;
 }
 
-.some-input input[checked="on"]:checked + .icon-check{
+.some-input input[disabled]:checked + .icon-check{
  	background: url(../img/checkbox-on-grey.svg) no-repeat;
 }
 
@@ -799,26 +840,20 @@ legend {
 	border-bottom: none;
 }
 
-
-
-
 .flex-sort-nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: baseline;
 	margin-left: 50px;
-
 }
-
-
 
 .header-find-flex {
 	display: flex;
-	justify-content: row;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;	
-	padding: 25px 72px 23px 72px;
+	padding: 27px 72px 23px 72px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -867,7 +902,7 @@ legend {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 27px 72px 27px 72px;
+	padding: 28px 72px 29px 72px;
 
 	
 }
@@ -879,6 +914,7 @@ legend {
 	color: #000;
 	margin: 0;
 	cursor: pointer;
+	margin-top: -5px;
 }
 
 .hotels h2:hover {
@@ -908,7 +944,7 @@ legend {
 /*Оформление кнопок и их поведение
 кнопки-брони и подробней*/
 .button-more {	
-	padding: 6px 16px 5px 17px;
+	padding: 6px 17px 5px 17px;
 	background-color: #81b3d2;
 	margin: 0 6px 0 0;
 }
@@ -957,22 +993,18 @@ legend {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;	
-	padding: 7px 0 7px 0;
+	align-items: center;
 	
 }
 
-.descr-cost-flex p {
-	margin: 0;
-	padding: 0;
+.descr-cost-flex-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 18px;
+
 }
-
-.margin-cost p:nth-of-type(2) {
-	margin-left: 40px;
-}
-
-
-
 
 .flex-hotel {
 	display: flex;
@@ -982,8 +1014,11 @@ legend {
 }
 
 .margin-cost {
-	margin: 0 0 3px 0;
+	margin-top: 8px;
 }
+
+/*Задаем margin цене*/
+
 
 .flex-image-hotel {
 	display: flex;
@@ -992,6 +1027,21 @@ legend {
 	align-items: center;
 }
 
+.descr-margin-cost-hotel {
+	margin: 0 40px 0 0;
+}
+
+.descr-margin-cost-motel {
+	margin: 0 65px 0 0;
+}
+
+.descr-margin-cost-appart {
+	margin: 0 22px 0 0;
+}
+
+.corect-normilize {
+	margin: 0;
+}
 
 
 /*Для ползунка*/
@@ -1010,7 +1060,7 @@ legend {
 
 .filter-range-title {
 	margin-bottom: 9px;
-
+	margin-top: -2px;
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 21px;
@@ -1117,7 +1167,8 @@ legend {
 .btn-transparent {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 33px;
+	padding: 6px 31px;
+
 
 	font-size: 14px;
 	line-height: 20px;
