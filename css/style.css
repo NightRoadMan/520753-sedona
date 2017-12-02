@@ -336,6 +336,7 @@ div, p, input, button, form, section {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 80;
 }
 
 .findhotel b {
@@ -380,15 +381,12 @@ div, p, input, button, form, section {
 }
 
 /*Стилизация самого поп-апа*/
-
-.pop-up-close {
-	display: none;
+.pop-up-close {	
+	animation-name: opacityhide;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: linear;	
 }
-
-.pop-up-open {
-	display: block;	
-}
-
 
 .pop-up {	
 	width: 568px;
@@ -396,6 +394,7 @@ div, p, input, button, form, section {
 	align-self: center;
 	box-shadow: 0 0 20px rgba(0,0,0,0.3);
 	padding: 55px 0 55px 0;
+	z-index: 60;
 }
 
 /*Базовая стилизация инпутов в поп-апе*/
@@ -444,7 +443,7 @@ div, p, input, button, form, section {
 }
 
 .button-form {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: inherit;
 	border: 0;
 	background-color: transparent;
 	border-radius: 0;
@@ -576,6 +575,10 @@ div, p, input, button, form, section {
 	background-color: #5496bd;
 }
 
+.google-map {
+	position: absolute;
+	z-index: 0;
+}
 
 
 .map {
@@ -597,8 +600,7 @@ div, p, input, button, form, section {
 	background-color: rgba(255, 255, 255, .9);	
 	margin-top: auto;
 	padding: 37px 0 37px 0;
-	
-
+	z-index: 2;
 }
 
 .bot-section-hashtag {
@@ -1184,4 +1186,11 @@ div, p, input, button, form, section {
 .btn-transparent:hover {
 	color: #000000;
 	background: #ffffff;
+}
+
+@keyframes opacityhide {
+	100% {
+	transform: translateY(-400px);
+	visibility: hidden;
+	}
 }
