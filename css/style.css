@@ -384,8 +384,17 @@ div, p, input, button, form, section {
 .pop-up-close {	
 	animation-name: opacityhide;
 	animation-duration: 1s;
-	animation-fill-mode: both;
-	animation-timing-function: linear;	
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-direction: normal;
+}
+
+.pop-up-cl {	
+	animation-direction: reverse;
+	animation-name: opacityhide;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 .pop-up {	
@@ -1155,7 +1164,7 @@ div, p, input, button, form, section {
 }
 
 .range-toggle:hover {
-	background: #1c4f80;
+	transform: scale(1.1);
 }
 
 .range-toggle-min {
