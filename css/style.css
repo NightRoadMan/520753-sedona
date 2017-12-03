@@ -586,7 +586,8 @@ div, p, input, button, form, section {
 
 .google-map {
 	position: absolute;
-	z-index: 0;
+	z-index: 2;
+	display: block;
 }
 
 
@@ -597,6 +598,7 @@ div, p, input, button, form, section {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	z-index: 0;
 }
 
 /*Стилизуем футтер*/
