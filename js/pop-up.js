@@ -1,41 +1,60 @@
 	var link = document.querySelector(".button-popup");
 	var popup = document.querySelector(".pop-up");
-	var form = popup.querySelector("form");
-	var kitty = popup.querySelector(".pop-up-cl");
+	
 
 	var timeIn = popup.querySelector("[name=comein]");
 	var timeOut = popup.querySelector("[name=comeout]");
 
 	var storage = localStorage.getItem("timeIn");
+	var storage = localStorage.getItem("timeOut");
 	
-
+	
+	popup.classList.add("pop-up-js-init");	
 
 	link.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	popup.classList.toggle("pop-up-close");
-	
-	if (form.classList.contains("pop-up-close")) {
-		form.classList.remove("pop-up-close")
-		form.classList.add("pop-up-cl");
+		if (storage) {
+		timeIn.value = storage;
+		timeOut.focus();
+    } else {
+		timeIn.focus();
+    }
+
+	if (popup.classList.contains("pop-up-js-init")) {
+		popup.classList.remove("pop-up-js-init");
+		popup.classList.add("pop-up-visible");
+		popup.classList.remove("modal-error");
+		timeIn.focus();
 	}
-	});
-
-
-
-	form.addEventListener("submit", function (evt) {
-	if (!timeIn.value || !timeOut.value) {
-	evt.preventDefault();
-	console.log("Нужно ввести логин и пароль");
-	} else {
-	localStorage.setItem("comein", timeIn.value);
+	else {
+		popup.classList.toggle("pop-up-visible");
+		popup.classList.toggle("pop-up-hide");
 	}
 	});
 
 	window.addEventListener("keydown", function (evt) {
 		if (evt.keyCode === 27) {
-			if (!form.classList.contains("pop-up-close") == false) {
-				form.classList.contains("pop-up-close");
+			console.log("111")
+			if (popup.classList.contains("pop-up-visible")) {
+				popup.classList.add("pop-up-hide");
+				popup.classList.remove("pop-up-visible");
+				popup.classList.remove("modal-error");
 			}
 	}
-
 	});
+
+	popup.addEventListener("submit", function (evt) {
+	    if (!timeIn.value || !timeOut.value) {
+			evt.preventDefault();			
+			popup.classList.remove("modal-error");
+			popup.offsetWidth = popup.offsetWidth;
+			popup.classList.add("modal-error");
+		} else {
+			localStorage.setItem("timeIn", timeIn.value);
+			localStorage.setItem("timeOut", timeOut.value);
+		}
+	});
+
+
+
+
