@@ -1108,11 +1108,11 @@ padding: 0;
 }
 
 .price-controls .min-price {
-	padding-left: 62px;
+	padding: 0 0 0 62px;
 }
 
 .price-controls .max-price {
-	padding-left: 80px;
+	padding: 0 0 0 80px;
 }
 
 .price-controls input {
