@@ -8,16 +8,19 @@
 	var storage = localStorage.getItem("timeIn");
 	var storage = localStorage.getItem("timeOut");
 	
-	
-	popup.classList.add("pop-up-js-init");	
+	popup.classList.add("pop-up-js-init");
 
 	link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 		if (storage) {
 		timeIn.value = storage;
-		timeOut.focus();
+			setTimeout(function () {
+			timeOut.focus();
+			}, 700);
     } else {
-		timeIn.focus();
+			setTimeout(function () {
+			timeIn.focus();
+			}, 700);
     }
 
 	if (popup.classList.contains("pop-up-js-init")) {
@@ -54,7 +57,6 @@
 			localStorage.setItem("timeOut", timeOut.value);
 		}
 	});
-
 
 
 

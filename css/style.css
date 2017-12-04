@@ -50,7 +50,6 @@ padding: 0;
 	margin: 0px auto;
 	z-index: 0;
 	position: relative;
-
 }
 
 /*Стилизация меню*/
@@ -61,7 +60,6 @@ padding: 0;
 	justify-content: space-between;
 	align-items:center;
 	flex-wrap: wrap;
-
 	margin: 0;
 	padding: 20px 70px 20px 70px;
 	margin-top: -3px;
@@ -73,7 +71,6 @@ padding: 0;
 
 .menu-main li {
 	list-style: none;
-
 	width: 20%;
 }
 
@@ -83,14 +80,12 @@ padding: 0;
 
 .menu-main li:nth-child(3) {
 	text-align: right;
-
 	margin-left: auto;
 	margin-right: 32px;
-
 }
 
 .menu-main li:nth-child(4) {
-	text-align: right;	
+	text-align: right;
 }
 
 .menu-main a {
@@ -159,9 +154,7 @@ padding: 0;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	padding: 60px 0 53px 0;
-
 	background-color: white;
 }
 
@@ -171,7 +164,6 @@ padding: 0;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 26px;
-
 	width: 440px;
 	margin: 0 auto;
 	margin-bottom: 26px;
@@ -179,10 +171,9 @@ padding: 0;
 
 .description-causes {
 	font-size: 14px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	color: #333333;;
 	line-height: 26px;
-
 	margin: 0 auto;
 }
 
@@ -200,11 +191,9 @@ padding: 0;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-
 	background-color: #81b3d2;
 	width: 400px;
-
-	padding: 46px 0 60px 0;	
+	padding: 46px 0 60px 0;
 }
 
 .info-blueback h3 {
@@ -214,7 +203,6 @@ padding: 0;
 	width: 155px;
 	text-align: center;
 	line-height: 21px;
-
 	margin:0;
 }
 
@@ -229,13 +217,11 @@ padding: 0;
 
 .info-blueback-descrip {
 	width: 285px;
-
 	text-transform: uppercase;
 }
 
 .info-blueback-descrip-dop {
 	width: 310px;
-
 	text-transform: uppercase;
 }
 
@@ -265,11 +251,9 @@ padding: 0;
 .flex-section-icon h3 {
 	font-size: 21px;
 	text-transform: uppercase;
-
 	color: #000;
 	text-align: center;
 	line-height: 21px;
-
 	margin: 28px 0 0 0;
 }
 
@@ -290,13 +274,9 @@ padding: 0;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-
 	background-color: #eee;
-
 	padding: 50px 0 48px 0;
 }
-
-
 
 .flex-section-text {
 	display: flex;
@@ -311,7 +291,6 @@ padding: 0;
 	color: #000;
 	text-align: center;
 	line-height: 21px;
-
 	margin: 0 0 25px 0;
 	width: 120px;
 }
@@ -322,7 +301,6 @@ padding: 0;
 	text-transform: uppercase;
 	color: #333;
 	line-height: 21px;
-
 	margin: 0 0 15px 0;
 	width: 263px;
 }
@@ -344,7 +322,6 @@ padding: 0;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #000;
-
 	padding: 0;
 }
 
@@ -354,7 +331,6 @@ padding: 0;
 	line-height: 24px;
 	color: #333;
 	text-transform: uppercase;
-
 	margin: 26px 0 46px 0;
 }
 
@@ -368,7 +344,6 @@ padding: 0;
 	font-weight: bold;
 	border: none;
 	border-radius: 0;
-
 	width: 568px;
 	height: 86px;
 	padding: 0;
@@ -429,7 +404,7 @@ padding: 0;
 }
 
 .pop-up-input:active,
- .pop-up-input:focus {
+.pop-up-input:focus {
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
 	outline: none;
@@ -446,16 +421,13 @@ padding: 0;
 	font-weight: bold;
 }
 
-
 /*Стилизация первой строки Дата заезда*/
-
 
 .pop-up-flex-date {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-
 	margin-bottom: 30px;
 }
 
@@ -467,6 +439,7 @@ padding: 0;
 }
 
 /*Оформление иконки календаря + стилизация поведения*/
+
 .icon-calendar {
 	position: absolute;
 	right: 5px;
@@ -503,7 +476,6 @@ padding: 0;
 
 .input-width-pop-mini {
 	text-align: center;
-
 	width: 115px;
 	padding: 0 35px 0 35px;
 }
@@ -571,10 +543,8 @@ padding: 0;
 	display: block;
 	margin: 0 auto;
 	margin-top: 54px;
-	
 	border-radius: 0;
 	font-family: inherit;
-
 	width: 458px;
 	height: 58px;
 }
@@ -591,16 +561,18 @@ padding: 0;
 .google-map {
 	position: absolute;
 	z-index: 2;
-	display: block;
+	top:0;
+	left:0;
 }
 
 
 .map {
+	display: flex;
+	flex-direction: column;
+	position: relative; 
 	background-image: url(../img/map.jpg);
 	background-size: cover;
 	height: 594px;
-	display: flex;
-	flex-direction: column;
 	overflow: hidden;
 	z-index: 0;
 }
@@ -672,7 +644,7 @@ padding: 0;
 	padding-right: 99px;
 }
 
-.position-logo span{
+.position-logo span {
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-right: 8px;
@@ -682,11 +654,11 @@ padding: 0;
 	fill: #231f20;
 }
 
-.link-svg-logo:hover .svg-logo path {
+.link-svg-logo:hover path {
 	fill: #81b3d2;
 }
 
-.link-svg-logo:active .svg-logo path {
+.link-svg-logo:active path {
 	fill: #bdbbbc;
 }
 
@@ -752,10 +724,9 @@ padding: 0;
 	margin-top:-2px;
 }
 
-
 .some-input label {
 	display: block;
-	position: relative;	
+	position: relative;
 	height: 23px;
 }
 
@@ -819,13 +790,12 @@ padding: 0;
 	justify-content: space-between;
 	align-items: baseline;
 	width: 240px;
-	padding-left: 38px;	
+	padding-left: 38px;
 	margin: 0;
 }
 
 .menu-sort li{
 	list-style: none;
-
 }
 
 .menu-sort a {
@@ -840,7 +810,6 @@ padding: 0;
 	color: #81b3d2;
 	border-bottom: 2px dotted #81b3d2; 
 }
-
 
 .menu-sort a:active {
 	color: #000000;
@@ -878,23 +847,19 @@ padding: 0;
 	margin-right: 5px;
 }
 
-.arrow-find .color-svg-up path{
+.arrow-find path {
 	fill: #cacaca;
 }
 
-.arrow-find:hover .color-svg-up path {
+.arrow-find:hover path {
 	fill: #231f20;
 }
 
-.arrow-find:active .color-svg-up path{
+.arrow-find:active path {
 	fill: #81b3d2;
 }
 
-.arrow-find-active .color-svg-up {
-	fill: #81b3d2;
-}
-
-.arrow-find-active .color-svg-up path{
+.arrow-find-active path {
 	fill: #81b3d2;
 }
 
@@ -1074,12 +1039,9 @@ padding: 0;
 
 .price-controls {
 	position: relative;
-
 	height: 36px;
 	margin-bottom: 20px;
-
 	font-size: 0;
-
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 }
@@ -1089,21 +1051,16 @@ padding: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-
 	width: 2px;
 	height: 22px;
-
 	background: #ffffff;
 	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
 	display: inline-block;
-
 	font-size: 14px;
-	line-height: 30px;
 	vertical-align: top;
-
 	cursor: pointer;
 }
 
@@ -1118,30 +1075,27 @@ padding: 0;
 .price-controls input {
 	width: 50px;
 	margin: 0;
-
+	height: 32px;
+	padding: 0;
 	color: inherit;
 	font: inherit;
-
 	background: none;
 	border: none;
 }
 
 .range-controls {
 	position: relative;
-
 	margin-bottom: 32px;
 }
 
 .range-controls .scale {
 	height: 2px;
-
 	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
-
 	background: #ffffff;
 }
 
@@ -1149,10 +1103,8 @@ padding: 0;
 	position: absolute;
 	top: -9px;
 	background-color: #ababab;
-	
 	width: 4px;
 	height: 4px;
-
 	background: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
@@ -1176,13 +1128,10 @@ padding: 0;
 	display: block;
 	margin: 0 auto;
 	padding: 6px 31px;
-
-
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
 	text-transform: uppercase;
-
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
