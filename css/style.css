@@ -192,7 +192,7 @@ body {
     align-items: center;
     background-color: #81b3d2;
     width: 400px;
-    padding: 46px 0 60px 0;
+    padding: 46px 50px 60px 50px;
 }
 .info-blueback h3 {
     font-size: 21px;
@@ -710,7 +710,7 @@ body {
 .some-input label {
     display: block;
     position: relative;
-    height: 23px;
+    padding: 0px 0px 7px;
 }
 /*Кастомизация вида checkbox-ов, и стилизация их поведения
 а так же вид при блокировки*/
@@ -732,6 +732,10 @@ body {
 .some-input input[type="checkbox"]:checked + .icon-check {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
+.some-input input[type="checkbox"]:focus + .icon-check {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
 .some-input input[disabled] + .icon-check {
     background: url(../img/checkbox-off-grey.svg) no-repeat;
 }
@@ -739,7 +743,7 @@ body {
     background: url(../img/checkbox-on-grey.svg) no-repeat;
 }
 .some-input input[type="checkbox"] {
-    display: none;
+    visibility: hidden;
 }
 /*Стилизация строки поиска отеля*/
 
