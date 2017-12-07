@@ -150,14 +150,14 @@ body {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    padding: 60px 0 53px 0;
+    padding: 60px 200px 53px 200px;
     background-color: white;
+    text-align: center;
 }
 .description-sedona h1 {
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     line-height: 26px;
     width: 440px;
     margin: 0 auto;
@@ -167,7 +167,6 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     color: #333333;
-    ;
     line-height: 26px;
     margin: 0 auto;
 }
